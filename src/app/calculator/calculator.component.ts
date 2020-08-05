@@ -60,6 +60,13 @@ export class CalculatorComponent implements OnInit {
     console.log(this.firstOperand);
   }
 
+  public clear(): void {
+    this.currentNumber = '0';
+    this.firstOperand = null;
+    this.operator = null;
+    this.waitForSecondNumber = false;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
